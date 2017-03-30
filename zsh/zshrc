@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/luigi-work/.oh-my-zsh
+export ZSH=/home/$whoami/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -54,12 +54,12 @@ plugins=(git gitignore python virtualenv django)
 
 # User configuration
 
-  export PATH="/usr/local/bin:/usr/bin:/bin:/usr/games"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/games"
 # export MANPATH="/usr/local/man:$MANPATH"
 #
 #
 # added by Miniconda3 4.2.12 installer
-export PATH="/home/luigi-work/sandbox/python-workspace/miniconda/bin:$PATH"
+export PATH="/home/$whoami/sandbox/python-workspace/miniconda/bin:$PATH"
 
 source $ZSH/oh-my-zsh.sh
 
