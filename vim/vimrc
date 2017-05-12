@@ -24,9 +24,9 @@ end
 """""""""""""""""""""""""
 " Pathogen plugin setup
 """""""""""""""""""""""""
-execute pathogen#runtime_append_all_bundles()
-execute pathogen#helptags()
+" execute pathogen#runtime_append_all_bundles()
 execute pathogen#infect()
+execute pathogen#helptags()
 
 
 
@@ -77,9 +77,11 @@ let g:syntastic_mode_map = { 'mode': 'active',
                             \ 'active_filetypes': [],
                             \ 'passive_filetypes': ['html'] }
 
-let g:syntastic_quiet_warnings=1
+let g:syntastic_quiet_messages = {'level': 'warnings'}
 let g:syntastic_enable_highlighting=1
 let g:syntastic_auto_jump=0
+
+let g:syntastic_python_pylint_args = "--load-plugins pylint_django"
 
 let g:syntastic_error_symbol='✗'
 let g:syntastic_warning_symbol='⚠'
