@@ -10,3 +10,7 @@ ln -s $PWD/zsh/oh-my-zsh ~/.oh-my-zsh
 
 # copy dotfile for bashrc
 ln -s $PWD/bashrc/bashrc ~/.bashrc
+
+# copy dotfile for spacevim
+ln -s $PWD/spacevim/spacevim ~/.spacevim
+ln -s $PWD/spacevim/space-vim ~/.space-vim
