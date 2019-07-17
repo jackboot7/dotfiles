@@ -100,10 +100,10 @@ fi
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
 
-export GOPATH=$HOME/sandbox/go-workspace
+export GOPATH=$HOME/projects/
 
 export PATH=$PATH:$GOPATH/bin
 
-# added by Miniconda3 4.2.12 installer
-export PATH="/home/luigi-work/sandbox/python-workspace/miniconda/bin:$PATH"
 export PATH=$HOME/sandbox/exercism:$PATH
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
