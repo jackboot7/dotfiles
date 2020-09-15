@@ -50,7 +50,7 @@ ZSH_THEME="af-magic"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git gitignore python virtualenv django)
+plugins=(git gitignore python virtualenv django poetry)
 
 # User configuration
 
@@ -88,9 +88,14 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
+alias vpn="cd ~/.openvpn && sudo openvpn vpn.ovpn"
+
+export AWS_DEFAULT_PROFILE=credijusto
+
 export GOPATH=$HOME/projects
 export PATH=$PATH:$GOPATH/bin
 export PATH=$HOME/sandbox/exercism/bin:$PATH
+export PATH=$HOME/.poetry/bin:$PATH
 function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
